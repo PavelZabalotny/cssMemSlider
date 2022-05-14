@@ -19,6 +19,7 @@ p {
     /*display: none;*/
     width: 20%;
     color: #ecfffc;
+    font-size: 1.1rem;
 }
 
 .slider {
@@ -38,7 +39,7 @@ p {
 }
 
 .slider__img img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 2%;
     object-fit: cover;
 
@@ -65,7 +66,7 @@ input[type=radio] {
 #r3:checked ~ .block .radio label[for=r3] span,
 #r4:checked ~ .block .radio label[for=r4] span,
 #r5:checked ~ .block .radio label[for=r5] span {
-    border: 0.2rem solid #4b50b2;
+    /*border: 0.2rem solid #4b50b2;*/
     background-color: transparent;
 }
 
@@ -110,7 +111,7 @@ input[type=radio] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
 }
 
 .block__container {
@@ -146,6 +147,12 @@ input[type=radio] {
 label {
     display: flex;
     padding: 0.5rem;
+    cursor: pointer;
+}
+
+label:hover > span {
+    background-color: rgb(233, 234, 255);
+    border: 0.15rem solid rgb(233, 234, 255)
 }
 
 label span {
@@ -153,21 +160,24 @@ label span {
     width: 1rem;
     height: 1rem;
     background-color: #4b50b2;
+    border: 0.15rem solid #4b50b2;
     border-radius: 50%;
 }
 
 label span:hover {
-    background-color: rgb(106, 112, 252);
+    background-color: rgb(233, 234, 255);
+    border: 0.15rem solid rgb(233, 234, 255);
 }
 
 label:active > span {
     background-color: transparent;
-    border: 0.2rem solid #4b50b2;
+    border: 0.15rem solid rgb(233, 234, 255);
 }
 
 @media (max-width: 540px) {
     .slider__block {
         flex-direction: column-reverse;
+        margin-top: 1rem;
     }
 
     .block__container {
