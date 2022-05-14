@@ -16,14 +16,12 @@ body {
 }
 
 p {
-    /*display: none;*/
     width: 20%;
     color: #ecfffc;
     font-size: 1.1rem;
 }
 
 .slider {
-    /*max-width: 36rem;*/
     margin: 0 2rem;
     overflow: hidden;
 }
@@ -42,8 +40,6 @@ p {
     width: 100%;
     border-radius: 2%;
     object-fit: cover;
-
-    /*display: none;*/
 }
 
 .block__radio {
@@ -66,28 +62,10 @@ input[type=radio] {
 #r3:checked ~ .block .radio label[for=r3] span,
 #r4:checked ~ .block .radio label[for=r4] span,
 #r5:checked ~ .block .radio label[for=r5] span {
-    /*border: 0.2rem solid #4b50b2;*/
     background-color: transparent;
 }
 
-#r1:checked ~ .image .image-1,
-#r2:checked ~ .image .image-2,
-#r3:checked ~ .image .image-3,
-#r4:checked ~ .image .image-4,
-#r5:checked ~ .image .image-5 {
-    /*opacity: 1;*/
-}
-
-#r1:not(:checked) ~ .image .image-1,
-#r2:not(:checked) ~ .image .image-2,
-#r3:not(:checked) ~ .image .image-3,
-#r4:not(:checked) ~ .image .image-4,
-#r5:not(:checked) ~ .image .image-5 {
-    /*opacity: 0;*/
-}
-
 #r1:checked ~ .image {
-    /*display: block;*/
     transform: translateX(0);
 }
 
@@ -111,7 +89,6 @@ input[type=radio] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*margin-top: 1rem;*/
 }
 
 .block__container {
